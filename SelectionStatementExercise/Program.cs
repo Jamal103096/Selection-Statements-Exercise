@@ -4,7 +4,24 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int favNumber = 42;
+
+           
+            Console.WriteLine("Guess my favorite number:");
+            int userInput = int.Parse(Console.ReadLine());
+
+            if (userInput < favNumber)
+            {
+                Console.WriteLine("Too low");
+            }
+            else if (userInput > favNumber)
+            {
+                Console.WriteLine("Too high");
+            }
+            else
+            {
+                Console.WriteLine("You guessed it!!!");
+            }
         }
     }
 }
